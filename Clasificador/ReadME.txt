@@ -2,4 +2,4 @@
 
 - En la carpeta 'Componentes' se encuentran los archivos dividos por función, clasificador por 'Clasificación', 'Control_de
   _Servos', 'Data_Logging' y 'Estructura_y_Cableado'. Esto con el fin de comprender mejor el proyecto desde todas las áreas
-  involucradas. 
+  involucradas. (Para Colaboradores).
