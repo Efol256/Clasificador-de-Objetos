@@ -5,17 +5,24 @@ Este repositorio contienen todo el material involucrado en el desarrollo y la im
 El clasificador de objetos consiste en un dispositivo capaz de diferenciar entre objetos y los colores de estos en tiempo real. Específicamente está diseñado para separar figuras esféricas en cuatro compartimientos según tres colores; rojo, verde o azul, en caso que no se cumplan las condiciones de forma o color, el objeto es depositado en un compartimiento aparte.
 
 ## Cómo funciona?
-Este dispositvo utiliza como herramientas deep learning: modelo de aprendizaje automático entrenado en un conjunto de datos etiquetados previamente capaz de distinguir entre formas y colores, y código escrito en python para distinguir entre los objetos presentados. Se utiliza una cámara para establecer  las caracterísitcas del objeto en timepo real, esta información es procesada por un dispositvo externo a la placa de desarrollo (raspberry pi pico) dado a las limitaciones que esta posee; por lo tanto la información una vez procesada es enviada a través de comución serial al controlador. Cabe destacar que el sistema cuenta con un sesor de proximidad con la finalidad de corroborar la presencia del objeto y evitar el envío constante de información sin peso hacia el controlador, esto permite utilizar menos recursos; en resumen, funciona como un dispositivo de redundancia.
+Este dispositvo utiliza como herramientas deep learning: modelo de aprendizaje automático entrenado en un conjunto de datos etiquetados previamente capaz de distinguir entre formas y colores. El modelo ha sido desarrollado en el lenguaje python.
+
+Se utiliza una cámara para establecer  las caracterísitcas del objeto en timepo real, esta información es procesada por un dispositvo externo a la placa de desarrollo (raspberry pi pico) dado a las limitaciones que esta posee; por lo tanto la información una vez procesada es enviada a través de comución serial al controlador. Cabe destacar que el sistema cuenta con un sensor de proximidad con la finalidad de corroborar la presencia del objeto y evitar el envío constante de información sin peso hacia el controlador, esto permite el ahorro de recursos.
 
 La función del controlador, para este caso, una raspberry pi pico, es la de interpretar la información transmitida a través de puertos  seriales desde el dispositivo externo para indicarle al resto del sistema su función. Para ser más específicos, esta se encarga de contabilizar la cantidad de objetos que han sido clasificados, en qué compartimiento se depositaron, el tiempo en que fueron clasificados, cómo deben posicionarse los servos para que el objeto se deposite en el lugar correcto, mostrar en una pantalla lcd el color del objeto clasificado y encender un led con el color indicado; esta información se preserva en un archivo .txt para ser analizada en cuyo caso se necesite. 
 
 ## Requisitos
 Para utilizar el clasificador necesitarás: Python 3, las siguientes librerías y materiales:
 
-- Tensorflow
-- Keras
-- OpenCV
-- Matplotlib
+### Librerías
+Estas se instalan a través del comando pip. Asegúrese de que el programa Python se encuente incluido en el path y que esta herramienta esté instalada en su sistema.
+
+- 
+- 
+- OpenCV (https://opencv.org/releases/)
+- 
+
+### Materiales
 - Una placa de desarrollo Raspberry Pi Pico
 - Un cable USB para conectar la placa a tu computadora
 - Servomotores
@@ -38,3 +45,6 @@ Para utilizar el clasificador, sigue estos pasos:
 7. Observa cómo el sistema va clasificando de manera autónoma.
 
 Espera a que el clasificador de objetos procese los objetos y los clasifique en los compartimientos correspondientes.
+
+## Contribuciones
+Las contribuciones a este proyecto son bienvenidas. Si deseas contribuir, cree un fork del repositorio y envíe un pull request con sus cambios.
