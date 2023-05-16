@@ -43,5 +43,3 @@ Para utilizar el clasificador, sigue estos pasos:
 5. Ejecuta el código en tu computadora para procesar las imágenes y enviar la información al dispositivo externo (Raspberry Pi Pico).
 6. Ubica objetos dentro del rango de visión de la cámara para que el sistema pueda ir clasificando.
 7. Observa cómo el sistema va clasificando de manera autónoma.
-
-Espera a que el clasificador de objetos procese los objetos y los clasifique en los compartimientos correspondientes.
