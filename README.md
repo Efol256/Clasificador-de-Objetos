@@ -45,6 +45,3 @@ Para utilizar el clasificador, sigue estos pasos:
 7. Observa cómo el sistema va clasificando de manera autónoma.
 
 Espera a que el clasificador de objetos procese los objetos y los clasifique en los compartimientos correspondientes.
-
-## Contribuciones
-Las contribuciones a este proyecto son bienvenidas. Si deseas contribuir, cree un fork del repositorio y envíe un pull request con sus cambios.
